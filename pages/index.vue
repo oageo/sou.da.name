@@ -24,7 +24,11 @@ useHead({
     meta: [
       { property: 'og:type', content: 'article' },
       { property: 'og:title', content: 'そうだな' },
-      { property: 'og:description', content: 'そうだね' }
+      { property: 'og:description', content: 'そうだね' },
+      { name: 'og:image', content: '/soudana.png' }
+    ],
+    link: [
+      { rel: "icon", href: "/soudana.png", type: "image/png"}
     ]
 })
 </script>
