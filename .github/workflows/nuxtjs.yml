@@ -8,6 +8,11 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    pull_request:
+      types:
+        - opened
+      branches:
+        - "main"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -63,7 +68,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
-            dist
+            .output/public
             .nuxt
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
           restore-keys: |
@@ -75,7 +80,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist
+          path: ./.output/public
 
   # Deployment job
   deploy:
