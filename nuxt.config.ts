@@ -10,7 +10,7 @@ export default defineNuxtConfig({
             { name: 'og:site_name', content: 'そうだな' }
             ],
             link: [
-            { rel: "icon", href: "/soudana.png", type: "image/png"}
+            { rel: "icon", href: "favicon.ico", type: "image/x-icon"}
             ]
         }
     },
