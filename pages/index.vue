@@ -17,3 +17,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useHead({
+    title: 'そうだな',
+    meta: [
+      { property: 'og:type', content: 'article' },
+      { property: 'og:title', content: 'そうだな' },
+      { property: 'og:description', content: 'そうだね' }
+    ]
+})
+</script>
