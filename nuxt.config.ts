@@ -16,5 +16,8 @@ export default defineNuxtConfig({
     },
     css: [
         "bulma"
+    ],
+    modules: [
+        'nuxt-purgecss'
     ]
 })
