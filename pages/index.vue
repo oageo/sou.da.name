@@ -8,11 +8,7 @@
     </div>
     <div class="hero-foot">
       <nav class="tabs is-boxed is-fullwidth">
-        <div class="container">
-          <ul>
-            <li><a href="https://www.osumiakari.jp">Powered by Osumi Akari</a></li>
-          </ul>
-        </div>
+        
       </nav>
     </div>
   </div>
