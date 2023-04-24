@@ -18,6 +18,11 @@ export default defineNuxtConfig({
         "bulma"
     ],
     modules: [
-        'nuxt-purgecss'
+        'nuxt-purgecss',
+        'nuxt-cloudflare-analytics',
+        {
+            token: "ac39e1fbb25543fd97a96c1a42bcbb44",
+            scriptPath: false
+        }
     ]
 })
