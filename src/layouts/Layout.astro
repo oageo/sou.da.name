@@ -1,0 +1,30 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title,description } = Astro.props;
+
+import 'bulma/css/bulma.min.css';
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description}>
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content={title} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} - sou.da.name</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style>
+
+</style>
