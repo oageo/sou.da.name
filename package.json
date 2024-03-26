@@ -10,9 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.0.5",
-    "astro-purgecss": "^4.0.0",
-    "bulma": "^0.9.4",
-    "sass": "^1.69.5"
+    "astro": "^4.5.9",
+    "astro-purgecss": "^4.1.0",
+    "bulma": "^1.0.0",
+    "sass": "^1.72.0"
   }
 }
