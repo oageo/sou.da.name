@@ -1,0 +1,22 @@
+<button id="share" class="button">
+    Share
+</button>
+
+<script>
+const { title } = Astro.props;
+const shareData = {
+    title: title,
+    url: "https://sou.da.name"
+}
+
+const buttonSelector = document.querySelector(".share");
+
+buttonSelector.addEventListener("click", async () => {
+    try {
+        await window.navigator.share(shareData);
+    } catch (error) {
+        console.log(window.navigator.canShare(shareData));
+        console.log(error);
+    }
+})
+</script>
