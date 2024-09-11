@@ -13,9 +13,9 @@ const buttonSelector = document.querySelector(".share");
 
 buttonSelector.addEventListener("click", async () => {
     try {
-        await navigator.share(shareData);
+        await window.navigator.share(shareData);
     } catch (error) {
-        console.log(navigator.canShare(shareData));
+        console.log(window.navigator.canShare(shareData));
         console.log(error);
     }
 })
